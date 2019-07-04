@@ -18,7 +18,7 @@ contract SimpleBank {
     /* Fill in the keyword. We want to create a getter function and allow contracts to be able to see if a user is enrolled.  */
     mapping (address => bool) enrolled;
 
-    function getEnrolled() public view returns(bool){
+    function enrolled() public view returns(bool){
         return enrolled[msg.sender] == true;
     }
 
